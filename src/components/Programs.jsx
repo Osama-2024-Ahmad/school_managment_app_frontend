@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from '../config/api';
 function Programs() {
   const [programs, setPrograms] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -23,7 +24,7 @@ function Programs() {
               id: 1,
               title: "Robotics for Kids",
               description: "Learn to build and program robots.",
-              image: "http://127.0.0.1:8000/media/programs/robotics_for_kids.png",
+              image: "${API_BASE_URL}/media/programs/robotics_for_kids.png",
               teacher: { name: "Mr. Smith" },
               price: "$100",
               lessons: 10,
@@ -33,7 +34,7 @@ function Programs() {
               id: 2,
               title: "Art & Creativity",
               description: "Unleash your creativity with painting and drawing.",
-              image: "http://127.0.0.1:8000/media/programs/art_and_creativity.png",
+              image: "${API_BASE_URL}/media/programs/art_and_creativity.png",
               teacher: { name: "Ms. Johnson" },
               price: "$80",
               lessons: 8,
@@ -43,7 +44,7 @@ function Programs() {
               id: 3,
               title: "Coding Basics",
               description: "Introduction to programming with Python.",
-              image: "http://127.0.0.1:8000/media/programs/coding_basics_flyer.png",
+              image: "${API_BASE_URL}/media/programs/coding_basics_flyer.png",
               teacher: { name: "Mr. Lee" },
               price: "$120",
               lessons: 12,
@@ -61,7 +62,7 @@ function Programs() {
             id: 1,
             title: "Robotics for Kids",
             description: "Learn to build and program robots.",
-            image: "http://127.0.0.1:8000/media/programs/robotics_for_kids.png",
+            image: "${API_BASE_URL}/media/programs/robotics_for_kids.png",
             teacher: { name: "Mr. Smith" },
             price: "$100",
             lessons: 10,
@@ -71,7 +72,7 @@ function Programs() {
             id: 2,
             title: "Art & Creativity",
             description: "Unleash your creativity with painting and drawing.",
-            image: "http://127.0.0.1:8000/media/programs/art_and_creativity.png",
+            image: "${API_BASE_URL}/media/programs/art_and_creativity.png",
             teacher: { name: "Ms. Johnson" },
             price: "$80",
             lessons: 8,
@@ -81,7 +82,7 @@ function Programs() {
             id: 3,
             title: "Coding Basics",
             description: "Introduction to programming with Python.",
-            image: "http://127.0.0.1:8000/media/programs/coding_basics_flyer.png",
+            image: "${API_BASE_URL}/media/programs/coding_basics_flyer.png",
             teacher: { name: "Mr. Lee" },
             price: "$120",
             lessons: 12,

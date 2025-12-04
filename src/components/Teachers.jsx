@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Clock } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from '../config/api';
 
 function Teachers() {
   const [teachers, setteachers] = useState([]);
@@ -27,19 +28,19 @@ function Teachers() {
               id: 1,
               name: "Mr. Smith",
               subject: "Robotics",
-              image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
+              image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
             },
             {
               id: 2,
               name: "Ms. Johnson",
               subject: "Art",
-              image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
+              image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
             },
             {
               id: 3,
               name: "Mr. Lee",
               subject: "Coding",
-              image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
+              image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
             },
           ]);
         } else {
@@ -53,19 +54,19 @@ function Teachers() {
             id: 1,
             name: "Mr. Smith",
             subject: "Robotics",
-            image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
+            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
           },
           {
             id: 2,
             name: "Ms. Johnson",
             subject: "Art",
-            image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
+            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
           },
           {
             id: 3,
             name: "Mr. Lee",
             subject: "Coding",
-            image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
+            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
           },
         ]);
       })

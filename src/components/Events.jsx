@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Clock } from "lucide-react";
 import { MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from '../config/api';
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -25,7 +26,7 @@ function Events() {
               id: 1,
               title: "Science Fair",
               description: "Showcasing student science projects.",
-              image: "http://127.0.0.1:8000/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
+              image: "${API_BASE_URL}/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
               location: "School Hall",
               time_from: "10:00 AM",
               time_to: "2:00 PM",
@@ -34,7 +35,7 @@ function Events() {
               id: 2,
               title: "Sports Day",
               description: "Annual sports competition.",
-              image: "http://127.0.0.1:8000/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
+              image: "${API_BASE_URL}/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
               location: "Sports Field",
               time_from: "9:00 AM",
               time_to: "3:00 PM",
@@ -43,7 +44,7 @@ function Events() {
               id: 3,
               title: "Art Exhibition",
               description: "Displaying student artwork.",
-              image: "http://127.0.0.1:8000/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
+              image: "${API_BASE_URL}/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
               location: "Art Room",
               time_from: "11:00 AM",
               time_to: "4:00 PM",
@@ -60,7 +61,7 @@ function Events() {
             id: 1,
             title: "Science Fair",
             description: "Showcasing student science projects.",
-            image: "http://127.0.0.1:8000/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
+            image: "${API_BASE_URL}/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
             location: "School Hall",
             time_from: "10:00 AM",
             time_to: "2:00 PM",
@@ -69,7 +70,7 @@ function Events() {
             id: 2,
             title: "Sports Day",
             description: "Annual sports competition.",
-            image: "http://127.0.0.1:8000/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
+            image: "${API_BASE_URL}/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
             location: "Sports Field",
             time_from: "9:00 AM",
             time_to: "3:00 PM",
@@ -78,7 +79,7 @@ function Events() {
             id: 3,
             title: "Art Exhibition",
             description: "Displaying student artwork.",
-            image: "http://127.0.0.1:8000/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
+            image: "${API_BASE_URL}/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
             location: "Art Room",
             time_from: "11:00 AM",
             time_to: "4:00 PM",

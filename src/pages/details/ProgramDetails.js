@@ -2,6 +2,7 @@ import { BookOpen, Clock, DollarSign, User } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useAuth } from '../../auth/AuthContext'
+import API_BASE_URL from '../config/api';
 
 function ProgramDetails() {
 
@@ -19,7 +20,7 @@ function ProgramDetails() {
   const [email, setEmail] = useState("")
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/programs/${id}/`)
+    fetch(`${API_BASE_URL}/programs/${id}/`)
       .then((res) => {
         console.log("📡 Response status:", res.status);
         if (!res.ok) {
@@ -39,8 +40,8 @@ function ProgramDetails() {
             id: 1,
             title: "Robotics for Kids",
             description: "Learn to build and program robots.",
-            image: "http://127.0.0.1:8000/media/programs/robotics_for_kids.png",
-            teacher: { name: "Mr. Smith", subject: "Robotics", image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png" },
+            image: "${API_BASE_URL}/media/programs/robotics_for_kids.png",
+            teacher: { name: "Mr. Smith", subject: "Robotics", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png" },
             price: "100",
             lessons: 10,
             hours: 20,
@@ -51,8 +52,8 @@ function ProgramDetails() {
             id: 2,
             title: "Art & Creativity",
             description: "Unleash your creativity with painting and drawing.",
-            image: "http://127.0.0.1:8000/media/programs/art_and_creativity.png",
-            teacher: { name: "Ms. Johnson", subject: "Art", image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png" },
+            image: "${API_BASE_URL}/media/programs/art_and_creativity.png",
+            teacher: { name: "Ms. Johnson", subject: "Art", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png" },
             price: "80",
             lessons: 8,
             hours: 16,
@@ -63,8 +64,8 @@ function ProgramDetails() {
             id: 3,
             title: "Coding Basics",
             description: "Introduction to programming with Python.",
-            image: "http://127.0.0.1:8000/media/programs/coding_basics_flyer.png",
-            teacher: { name: "Mr. Lee", subject: "Coding", image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png" },
+            image: "${API_BASE_URL}/media/programs/coding_basics_flyer.png",
+            teacher: { name: "Mr. Lee", subject: "Coding", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png" },
             price: "120",
             lessons: 12,
             hours: 24,
@@ -107,7 +108,7 @@ function ProgramDetails() {
     try {
 
       setSubmitting(true)
-      const res = await fetch("http://127.0.0.1:8000/reviews/", {
+      const res = await fetch("${API_BASE_URL}/reviews/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

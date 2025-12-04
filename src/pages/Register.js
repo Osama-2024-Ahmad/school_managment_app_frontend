@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext';
+import API_BASE_URL from '../config/api';
 
 function Register() {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await fetch("http://127.0.0.1:8000/users/", {
+      const res = await fetch(`${API_BASE_URL}/users/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +49,7 @@ function Register() {
       }
 
       login(data.token);
-      fetch("http://127.0.0.1:8000/profiles/", {
+      fetch(`${API_BASE_URL}/profiles/`, {
         headers: {
           "Authorization": `Token ${data.token}`,
         },

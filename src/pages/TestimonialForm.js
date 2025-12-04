@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useAuth } from '../auth/AuthContext'
 import { useNavigate } from 'react-router-dom'
 import { Star } from 'lucide-react';
+import API_BASE_URL from '../config/api';
 
 function Testimonial() {
 
@@ -26,7 +27,7 @@ function Testimonial() {
     }
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/testimonials/", {
+      const res = await fetch("${API_BASE_URL}/testimonials/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

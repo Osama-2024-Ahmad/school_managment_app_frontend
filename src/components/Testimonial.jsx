@@ -1,13 +1,14 @@
 import { Star } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import API_BASE_URL from '../config/api';
 function Testimonial() {
   const [testimonials, settestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/testimonials/")
+    fetch("${API_BASE_URL}/testimonials/")
       .then((res) => {
         console.log("📡 Response status:", res.status);
         if (!res.ok) {

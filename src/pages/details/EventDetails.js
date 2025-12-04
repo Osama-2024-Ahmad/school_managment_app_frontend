@@ -1,6 +1,7 @@
 import { BookOpen, Calendar, Clock, DollarSign, MapPin, User } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import API_BASE_URL from '../config/api';
 
 function EventDetails() {
 
@@ -12,7 +13,7 @@ function EventDetails() {
 
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/events/${id}/`)
+    fetch(`${API_BASE_URL}/events/${id}/`)
       .then((res) => {
         console.log("📡 Response status:", res.status);
         if (!res.ok) {
@@ -32,34 +33,34 @@ function EventDetails() {
             id: 1,
             title: "Science Fair",
             description: "Showcasing student science projects.",
-            image: "http://127.0.0.1:8000/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
+            image: "${API_BASE_URL}/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
             location: "School Hall",
             time_from: "10:00 AM",
             time_to: "2:00 PM",
             date: "2023-11-15",
-            teacher: { name: "Mr. Smith", subject: "Science", image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png" }
+            teacher: { name: "Mr. Smith", subject: "Science", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png" }
           },
           2: {
             id: 2,
             title: "Sports Day",
             description: "Annual sports competition.",
-            image: "http://127.0.0.1:8000/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
+            image: "${API_BASE_URL}/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
             location: "Sports Field",
             time_from: "9:00 AM",
             time_to: "3:00 PM",
             date: "2023-12-10",
-            teacher: { name: "Ms. Johnson", subject: "PE", image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png" }
+            teacher: { name: "Ms. Johnson", subject: "PE", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png" }
           },
           3: {
             id: 3,
             title: "Art Exhibition",
             description: "Displaying student artwork.",
-            image: "http://127.0.0.1:8000/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
+            image: "${API_BASE_URL}/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
             location: "Art Room",
             time_from: "11:00 AM",
             time_to: "4:00 PM",
             date: "2024-01-20",
-            teacher: { name: "Mr. Lee", subject: "Art", image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png" }
+            teacher: { name: "Mr. Lee", subject: "Art", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png" }
           }
         };
         if (mockEvents[id]) {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import API_BASE_URL from '../config/api';
 
 function TeacherDetails() {
   const { id } = useParams();
@@ -8,7 +9,7 @@ function TeacherDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/teachers/${id}/`)
+    fetch(`${API_BASE_URL}/teachers/${id}/`)
       .then((res) => {
         console.log("📡 Response status:", res.status);
         if (!res.ok) {
@@ -28,7 +29,7 @@ function TeacherDetails() {
             id: 1,
             name: "Mr. Smith",
             subject: "Robotics",
-            image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
+            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
             experience: "8 years",
             bio: "Passionate about technology and inspiring the next generation of engineers.",
             education: "M.Sc. in Robotics, MIT"
@@ -37,7 +38,7 @@ function TeacherDetails() {
             id: 2,
             name: "Ms. Johnson",
             subject: "Art",
-            image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
+            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
             experience: "5 years",
             bio: "Believes in the power of creativity to transform lives.",
             education: "B.F.A., Rhode Island School of Design"
@@ -46,7 +47,7 @@ function TeacherDetails() {
             id: 3,
             name: "Mr. Lee",
             subject: "Coding",
-            image: "http://127.0.0.1:8000/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
+            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
             experience: "10 years",
             bio: "Expert in Python and JavaScript, with a focus on practical application.",
             education: "B.S. in Computer Science, Stanford University"
