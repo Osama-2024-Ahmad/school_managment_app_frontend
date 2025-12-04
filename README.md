@@ -70,6 +70,4 @@ This frontend connects to a powerful Django backend.
 **Backend Repository:** [Link to Backend Repo](https://github.com/Osama-2024-Ahmad/school_managment_app_backend)
 **Live API:** [https://school-managment-app-backend.onrender.com](https://school-managment-app-backend.onrender.com)
 
-## 📝 License
 
-This project is licensed under the MIT License.
