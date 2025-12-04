@@ -28,19 +28,19 @@ function Teachers() {
               id: 1,
               name: "Mr. Smith",
               subject: "Robotics",
-              image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
+              image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
             },
             {
               id: 2,
               name: "Ms. Johnson",
               subject: "Art",
-              image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
+              image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
             },
             {
               id: 3,
               name: "Mr. Lee",
               subject: "Coding",
-              image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
+              image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
             },
           ]);
         } else {
@@ -54,19 +54,19 @@ function Teachers() {
             id: 1,
             name: "Mr. Smith",
             subject: "Robotics",
-            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
+            image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
           },
           {
             id: 2,
             name: "Ms. Johnson",
             subject: "Art",
-            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
+            image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
           },
           {
             id: 3,
             name: "Mr. Lee",
             subject: "Coding",
-            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
+            image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
           },
         ]);
       })

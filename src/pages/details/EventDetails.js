@@ -33,34 +33,34 @@ function EventDetails() {
             id: 1,
             title: "Science Fair",
             description: "Showcasing student science projects.",
-            image: "${API_BASE_URL}/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
+            image: "/media/events/Green_and_Yellow_Exciting_School_Admission_Instagram_Post.png",
             location: "School Hall",
             time_from: "10:00 AM",
             time_to: "2:00 PM",
             date: "2023-11-15",
-            teacher: { name: "Mr. Smith", subject: "Science", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png" }
+            teacher: { name: "Mr. Smith", subject: "Science", image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png" }
           },
           2: {
             id: 2,
             title: "Sports Day",
             description: "Annual sports competition.",
-            image: "${API_BASE_URL}/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
+            image: "/media/events/Blue_and_White_Dynamic_International_Olympic_Day_Instagram_Post.png",
             location: "Sports Field",
             time_from: "9:00 AM",
             time_to: "3:00 PM",
             date: "2023-12-10",
-            teacher: { name: "Ms. Johnson", subject: "PE", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png" }
+            teacher: { name: "Ms. Johnson", subject: "PE", image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png" }
           },
           3: {
             id: 3,
             title: "Art Exhibition",
             description: "Displaying student artwork.",
-            image: "${API_BASE_URL}/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
+            image: "/media/events/Yellow_and_White_Minimalist_Geometric_Memphis_Art_Exhibition_Poster.png",
             location: "Art Room",
             time_from: "11:00 AM",
             time_to: "4:00 PM",
             date: "2024-01-20",
-            teacher: { name: "Mr. Lee", subject: "Art", image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png" }
+            teacher: { name: "Mr. Lee", subject: "Art", image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png" }
           }
         };
         if (mockEvents[id]) {

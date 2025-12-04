@@ -29,7 +29,7 @@ function TeacherDetails() {
             id: 1,
             name: "Mr. Smith",
             subject: "Robotics",
-            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
+            image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post.png",
             experience: "8 years",
             bio: "Passionate about technology and inspiring the next generation of engineers.",
             education: "M.Sc. in Robotics, MIT"
@@ -38,7 +38,7 @@ function TeacherDetails() {
             id: 2,
             name: "Ms. Johnson",
             subject: "Art",
-            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
+            image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_1.png",
             experience: "5 years",
             bio: "Believes in the power of creativity to transform lives.",
             education: "B.F.A., Rhode Island School of Design"
@@ -47,7 +47,7 @@ function TeacherDetails() {
             id: 3,
             name: "Mr. Lee",
             subject: "Coding",
-            image: "${API_BASE_URL}/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
+            image: "/media/teachers/Blue_Gold_Modern_Graduation_Announcement_Instagram_Post_2.png",
             experience: "10 years",
             bio: "Expert in Python and JavaScript, with a focus on practical application.",
             education: "B.S. in Computer Science, Stanford University"
